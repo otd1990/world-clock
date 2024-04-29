@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    /> -->
+
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+
+    <script src="./assets/scripts/scripts.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Clock App</title>
+  </head>
+  <body>
+    <main class="container">
+      <article id="pageWrapper">
+        <section id="upperContent" class="clock__upper">
+          <section class="clock__quote">
+            <article class="clock__quote-main">
+              <p class="font-weight-light">
+                “The science of operations, as derived from mathematics more
+                especially, is a science of itself, and has its own abstract
+                truth and value.”
+              </p>
+              <button class="clock__quoute-new">
+                <img
+                  src="./assets/images/desktop/icon-refresh.svg"
+                  alt="refresh quote"
+                  class="clock__main-quote-icon"
+                  height="17"
+                  with="17"
+                />
+              </button>
+            </article>
+            <aside class="clock__quote-name">Ada Lovelace</aside>
+          </section>
+          <section class="clock__main">
+            <aside class="clock__main-intro">
+              <span id="greeting"></span>, It's currently
+            </aside>
+            <article class="clock__main-time-wrapper">
+              <h1 class="clock__main-time">
+                <span id="time"></span>
+                <span id="timeZone" class="clock__main-time-zone"></span>
+              </h1>
+            </article>
+            <article class="clock__main-bottom">
+              <div id="location">
+                In <span id="city"></span>, <span id="country"></span>
+              </div>
+              <div class="clock__main-bottom-button-wrapper">
+                <button id="showMore">
+                  <span>More</span>
+                  <span class="btn__icon">
+                    <img
+                      src="./assets/images/desktop/icon-arrow-up.svg"
+                      alt="show more information"
+                    />
+                  </span>
+                </button>
+              </div>
+            </article>
+          </section>
+        </section>
+        <section id="moreInfo" class="clock__more-info">
+          <div class="clock__more-info-wrapper">
+            <article class="clock__more-info-left">
+              <section class="clock__more-info-time">
+                <h2 class="small-heading">Current Timezone</h2>
+                <p id="currentTimeZone" class="large-text">Europe / London</p>
+              </section>
+              <section class="clock__more-info-time">
+                <h2 class="small-heading">Day Of The Year</h2>
+                <p id="dayOfYear" class="large-text">295</p>
+              </section>
+            </article>
+            <article class="clock__more-info-right">
+              <section class="clock__more-info-week">
+                <h2 class="small-heading">Day Of The Week</h2>
+                <p id="dayOfWeek" class="large-text">5</p>
+              </section>
+              <section class="clock__more-info-week">
+                <h2 class="small-heading">Week Number</h2>
+                <p id="dayOfYear" class="large-text">26</p>
+              </section>
+            </article>
+          </div>
+        </section>
+      </article>
+
+      <aside id="loadingOverlay">
+        <h2 class="small-heading">Loading</h2>
+        <p class="large-text">Getting Your Location...</p>
+      </aside>
+    </main>
+  </body>
+</html>
